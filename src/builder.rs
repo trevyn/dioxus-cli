@@ -123,6 +123,7 @@ pub fn build(config: &CrateConfig, quiet: bool) -> Result<BuildResult> {
             .input_path(input_path)
             .web(true)
             .unwrap()
+            .omit_default_module_path(false)
             .debug(true)
             .demangle(true)
             .keep_debug(true)
